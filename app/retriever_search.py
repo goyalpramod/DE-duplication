@@ -18,5 +18,3 @@ def retrieve_relevant_docs(query:str = "Perform UAT") -> dict:
     docsearch = PineconeVectorstore.from_documents(docs["context"], embeddings, index_name=index_name)
     docs = docsearch.similarity_search(docs["question"])
     return docs
-
-print(retrieve_relevant_docs())
