@@ -16,5 +16,5 @@ def retrieve_relevant_docs(query:str = "Perform UAT") -> dict:
     embeddings = OpenAIEmbeddings()
     docs = fetch_data({"question" : query})
     docsearch = PineconeVectorstore.from_documents(docs["context"], embeddings, index_name=index_name)
-    docs = docsearch.similarity_search(docs["question"])
+    docs = docsearch.similarity_search_with_relevance_scores(docs["question"])
     return docs
