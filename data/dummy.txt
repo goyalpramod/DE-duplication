@@ -264,6 +264,48 @@
     "description": "Carry out a major refactoring of the codebase for improved maintainability.",
     "assigned": "Ray Palmer",
     "progress": "In Review"
+  },
+  {
+    "Id": "d2f3g4h5-i6j7-k8l9-m1n2-o3p4q5r6s7t8",
+    "title": "Implement New Feature",
+    "description": "Develop the new search feature using ElasticSearch.",
+    "assigned": "John Doe",
+    "progress": "In Progress"
+  },
+  {
+    "Id": "u7v8w9x0-y1z2-a3b4-c5d6-e7f8g9h0i1j2",
+    "title": "Bug Fix on Homepage",
+    "description": "Fix the responsive design issue on the homepage for mobile users.",
+    "assigned": "Emily Clark",
+    "progress": "Completed"
+  },
+  {
+    "Id": "k9l8m7n6-o5p4-q3r2-s1t0-u8v9w7x6y5z4",
+    "title": "Database Optimization",
+    "description": "Enhance the current database schema to boost efficiency.",
+    "assigned": "Alex Smith",
+    "progress": "Not Started"
+  },
+  {
+    "Id": "v6b7n8m9-c5x4-z3a2-s1e9-d8f7g6h5i4j3",
+    "title": "Update Homepage Bug Fix",
+    "description": "Resolve the JavaScript console error seen on the homepage.",
+    "assigned": "Bruce Wayne",
+    "progress": "In Review"
+  },
+  {
+    "Id": "p0l9k8j7-h6g5-f4d3-s2a1-q1w2e3r4t5y6",
+    "title": "Perform UAT",
+    "description": "Handle final user acceptance testing with stakeholders for the latest features.",
+    "assigned": "Jane Doe",
+    "progress": "Pending"
+  },
+  {
+    "Id": "m4n5b6v7-c8x9-z0l1-k2j3-h4g5f6d7s8a9",
+    "title": "Database Optimization",
+    "description": "Inspect database indexes for their performance impact.",
+    "assigned": "Mia Wallace",
+    "progress": "Not Started"
   }
 ]
 
