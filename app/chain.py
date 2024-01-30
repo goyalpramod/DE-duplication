@@ -61,10 +61,12 @@ class MakeChain():
         returns the prompt to be used for the chain
         """
         try:
-            template = """Answer the question based only on the following context:
-                        {context}
-                        Question: {question}
-                        """
+            template = """You are responsible for determining whether a new task is a duplicate of another task or not, or if a similar task exists. 
+            you will be provided with the information on the current tasks and relevant info inside <tasks> </tasks> tags, if the tags are empty that means the new task does not have any similar task present in the current tasks,
+            but if some tasks are present inside the tags, then you have to determine whether the new task is a duplicate of any of the tasks present inside the tags or not.
+            you will be given the new task inside <new_task> </new_task> tags. Only Reply with the id of task which you have determined are a copy or duplication of the new task. If no such task exists, reply with 0.
+            <tasks> {context}</tasks>
+            <new_task>{question}</<new_task>>"""
             prompt = ChatPromptTemplate.from_template(template)
             return prompt
         except Exception as e:
