@@ -100,7 +100,7 @@ def fetch_data(x):
         # TODO find the path using os instead of manually putting it in
         loader = TextLoader(r"data\dummy.txt")
         documents = loader.load()
-        text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
+        text_splitter = CharacterTextSplitter(chunk_size=100, chunk_overlap=10, separator="\n")
         docs = text_splitter.split_documents(documents)   
         return {"context": docs, "question": x["question"]}
     except Exception as e:
