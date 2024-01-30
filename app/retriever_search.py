@@ -6,6 +6,11 @@ from langchain_openai import OpenAIEmbeddings
 index_name = "pod-index"
 
 def retrieve_relevant_docs(query:str = "Perform UAT") -> dict:
+    """
+    :param: str
+    :return: dict
+    takes in the query and responds with the relevant documents present in the database
+    """
     pinecone = InitialisePinecone()
     pinecone.make_index()
     embeddings = OpenAIEmbeddings()
