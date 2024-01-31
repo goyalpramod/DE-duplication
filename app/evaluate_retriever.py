@@ -62,6 +62,7 @@ with open(file_name, 'w', encoding='utf-8') as file:
             tuple_str = f"({doc_rep}, {doc_tuple[1]}, {doc_id})"
             # Write the string representation of the tuple to the file
             file.write(tuple_str + '\n')
+        file.write('\n')
 
 print(f"Data saved to '{file_name}' successfully.")
 
