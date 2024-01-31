@@ -5,7 +5,7 @@ from langchain_openai import OpenAIEmbeddings
 from langchain_community.chat_models import ChatOpenAI
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate
-from langchain_core.runnables import RunnableParallel, RunnablePassthrough, RunnableLambda
+from langchain_core.runnables import RunnableParallel, RunnablePassthrough
 from app.vectorstores import InitialisePinecone
 from langchain.schema import Document
 import json 
@@ -68,9 +68,12 @@ class MakeChain():
         try:
             if vectorstore == "pinecone":
                 pinecone = InitialisePinecone()
-                pinecone.make_index()
-                docs = fetch_data()
-                self.docsearch = PineconeVectorStore.from_documents(docs, self.embeddings, index_name=index_name)
+                index_created = pinecone.make_index()
+                if index_created:
+                    docs = fetch_data()
+                    self.docsearch = PineconeVectorStore.from_documents(docs, self.embeddings, index_name=index_name)
+                else:
+                    self.docsearch = PineconeVectorStore.from_existing_index(index_name=index_name, embedding=self.embeddings)
             else:
                 return None
         except Exception as e:
