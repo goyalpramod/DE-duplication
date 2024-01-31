@@ -28,3 +28,6 @@ class InitialisePinecone():
             # wait for index to be initialized
             while not self.pc.describe_index(index_name).status['ready']:
                 time.sleep(1)
+            return True
+        else:
+            return False
