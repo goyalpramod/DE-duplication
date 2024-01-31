@@ -11,6 +11,33 @@ from langchain.schema import Document
 import json 
 load_dotenv(find_dotenv())
        
+def fetch_data():
+    """
+    :params: dict
+    :return: dict
+
+    fetches the data from the text file and returns a dict
+    """
+    try:
+        file_path = "data\dummy.json"
+        with open(file_path, 'r') as file:
+            data = json.load(file)
+        docs = []
+
+        for document in data:
+            # page_content is a concatenation of description and title
+            page_content = document["description"] + " " + document["title"]
+            
+            # Metadata should contain the rest, so we need to exclude description and title from the document dict
+            metadata = {key: value for key, value in document.items() if key not in ['description', 'title']}
+            
+            final_doc = Document(page_content=page_content, metadata=metadata)
+            docs.append(final_doc)
+        return docs
+    except Exception as e:
+        print(f"Error occurred while fetching data: {e}")
+        return None
+    
 class MakeChain():
     def __init__(self) -> None:
         self.openai_api_key = os.environ["OPENAI_API_KEY"]
@@ -42,18 +69,19 @@ class MakeChain():
             if vectorstore == "pinecone":
                 pinecone = InitialisePinecone()
                 pinecone.make_index()
-                self.vectorstore = PineconeVectorStore.from_existing_index(index_name=index_name,
-                                           embedding=self.embeddings)
+                docs = fetch_data()
+                self.docsearch = PineconeVectorStore.from_documents(docs, self.embeddings, index_name=index_name)
             else:
                 return None
-            
-            retriever = self.vectorstore.as_retriever(
-                search_type="similarity_score_threshold", search_kwargs={"score_threshold": 0.8}
-            )
-            return retriever
         except Exception as e:
             print(f"Error occurred while choosing vectorstore: {e}")
             return None
+
+    def get_retriever(self):
+        retriever = self.docsearch.as_retriever(
+            search_type="similarity_score_threshold", search_kwargs={"score_threshold": 0.8}
+        )
+        return retriever
 
     def make_prompt(self):
         """
@@ -91,45 +119,17 @@ class MakeChain():
         except Exception as e:
             print(f"Error occurred while choosing model: {e}")
             return None
-        
-    
-def fetch_data(x):
-    """
-    :params: dict
-    :return: dict
-
-    fetches the data from the text file and returns a dict
-    """
-    try:
-        file_path = "data\dummy.json"
-        with open(file_path, 'r') as file:
-            data = json.load(file)
-        docs = []
-
-        for document in data:
-            # page_content is a concatenation of description and title
-            page_content = document["description"] + " " + document["title"]
-            
-            # Metadata should contain the rest, so we need to exclude description and title from the document dict
-            metadata = {key: value for key, value in document.items() if key not in ['description', 'title']}
-            
-            final_doc = Document(page_content=page_content, metadata=metadata)
-            docs.append(final_doc)
-        return {"context": docs, "question": x["question"]}
-    except Exception as e:
-        print(f"Error occurred while fetching data: {e}")
-        return None
 
 # Make the chain
 chain_obj = MakeChain()
 chain_obj.choose_embeddings()
-retriever = chain_obj.choose_vectorstore()
+chain_obj.choose_vectorstore()
+retriever = chain_obj.get_retriever()
 prompt = chain_obj.make_prompt()
 model = chain_obj.choose_model() 
 
 chain = (
     RunnableParallel({"context": retriever, "question": RunnablePassthrough()})
-    | RunnableLambda(fetch_data) 
     | prompt
     | model
     | StrOutputParser()
