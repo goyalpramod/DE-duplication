@@ -1,7 +1,5 @@
 import os
 from dotenv import load_dotenv, find_dotenv
-from langchain.text_splitter import CharacterTextSplitter
-from langchain_community.document_loaders import TextLoader
 from langchain_community.vectorstores import Pinecone as PineconeVectorStore
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.chat_models import ChatOpenAI
@@ -9,6 +7,8 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnableParallel, RunnablePassthrough, RunnableLambda
 from app.vectorstores import InitialisePinecone
+from langchain.schema import Document
+import json 
 load_dotenv(find_dotenv())
        
 class MakeChain():
@@ -47,7 +47,9 @@ class MakeChain():
             else:
                 return None
             
-            retriever = self.vectorstore.as_retriever()
+            retriever = self.vectorstore.as_retriever(
+                search_type="similarity_score_threshold", search_kwargs={"score_threshold": 0.8}
+            )
             return retriever
         except Exception as e:
             print(f"Error occurred while choosing vectorstore: {e}")
@@ -99,11 +101,20 @@ def fetch_data(x):
     fetches the data from the text file and returns a dict
     """
     try:
-        # TODO find the path using os instead of manually putting it in
-        loader = TextLoader(r"data\dummy.txt")
-        documents = loader.load()
-        text_splitter = CharacterTextSplitter(chunk_size=100, chunk_overlap=10, separator="\n")
-        docs = text_splitter.split_documents(documents)   
+        file_path = "data\dummy.json"
+        with open(file_path, 'r') as file:
+            data = json.load(file)
+        docs = []
+
+        for document in data:
+            # page_content is a concatenation of description and title
+            page_content = document["description"] + " " + document["title"]
+            
+            # Metadata should contain the rest, so we need to exclude description and title from the document dict
+            metadata = {key: value for key, value in document.items() if key not in ['description', 'title']}
+            
+            final_doc = Document(page_content=page_content, metadata=metadata)
+            docs.append(final_doc)
         return {"context": docs, "question": x["question"]}
     except Exception as e:
         print(f"Error occurred while fetching data: {e}")
