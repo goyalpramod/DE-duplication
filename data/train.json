@@ -1,0 +1,362 @@
+[
+    {
+        "Id": "1212l33mn-44oo-55pp-66qq-77rr88ss9097",
+        "title": "Integrate Payment Gateway",
+        "description": "Implement Stripe as our main payment processing platform.",
+        "assigned": "Morgan Dee",
+        "progress": "Not Started",
+        "Label": 0,
+        "Duplicate of": ""
+    },
+    {
+        "Id": "1313m44no-55pp-66qq-77rr-88ss99tt0108",
+        "title": "Set Up User Analytics",
+        "description": "Deploy Google Analytics to track user behavior across all pages.",
+        "assigned": "Nolan Fei",
+        "progress": "Planning",
+        "Label": 0,
+        "Duplicate of": ""
+    },
+    {
+        "Id": "1414n55op-66qq-77rr-88ss-99tt00uu1219",
+        "title": "Launch Marketing Campaign",
+        "description": "Coordinate with the marketing team to launch the new product line.",
+        "assigned": "Olivia Hu",
+        "progress": "Not Started",
+        "Label": 0,
+        "Duplicate of": ""
+    },
+    {
+        "Id": "1515o66pq-77rr-88ss-99tt-00uu11vv2320",
+        "title": "Data Migration Project",
+        "description": "Migrate all legacy user data to the new system.",
+        "assigned": "Peter Ji",
+        "progress": "In Progress",
+        "Label": 0,
+        "Duplicate of": ""
+    },
+    {
+        "Id": "1616p77qr-88ss-99tt-00uu-11vv22ww3431",
+        "title": "User Feedback Survey",
+        "description": "Design and conduct a survey to gather feedback from our existing users.",
+        "assigned": "Quincy Ko",
+        "progress": "Planning",
+        "Label": 0,
+        "Duplicate of": ""
+    },
+    {
+        "Id": "1717q88rs-99tt-00uu-11vv-22ww33xx4542",
+        "title": "Server Infrastructure Upgrade",
+        "description": "Plan and execute an upgrade to the latest server hardware to improve performance.",
+        "assigned": "Rachel Li",
+        "progress": "Not Started",
+        "Label": 0,
+        "Duplicate of": ""
+    },
+    {
+        "Id": "1818r99st-00uu-11vv-22ww-33xx44yy5653",
+        "title": "Content Management System Update",
+        "description": "Update the CMS to support the latest content editing features.",
+        "assigned": "Steven Mo",
+        "progress": "Completed",
+        "Label": 0,
+        "Duplicate of": ""
+    },
+    {
+        "Id": "1919s00tu-11vv-22ww-33xx-44yy55zz6764",
+        "title": "Implement Two-Factor Authentication",
+        "description": "Add two-factor authentication for increased security during user login.",
+        "assigned": "Tanya Ni",
+        "progress": "In Review",
+        "Label": 0,
+        "Duplicate of": ""
+    },
+    {
+        "Id": "2020t11uv-22ww-33xx-44yy-55zz66aa7875",
+        "title": "Develop New Feature",
+        "description": "Create a new feature that allows users to save items to a wishlist for future purchase.",
+        "assigned": "Ursula Ou",
+        "progress": "Not Started",
+        "Label": 0,
+        "Duplicate of": ""
+    },
+    {
+        "Id": "2121u22vw-33xx-44yy-55zz-66aa77bb8986",
+        "title": "Enhance Customer Support",
+        "description": "Improve the customer support system to provide faster and more effective assistance.",
+        "assigned": "Victor Peng",
+        "progress": "In Progress",
+        "Label": 0,
+        "Duplicate of": ""
+    },
+    {
+        "Id": "2222v33wx-44yy-55zz-66aa-77bb88cc9097",
+        "title": "Improve Product Search",
+        "description": "Enhance the product search functionality to provide more accurate and relevant results.",
+        "assigned": "Wendy Qu",
+        "progress": "In Review",
+        "Label": 0,
+        "Duplicate of": ""
+    },
+    {
+        "Id": "2323w44xy-55zz-66aa-77bb-88cc99dd0120",
+        "title": "Develop New Feature",
+        "description": "Create a new feature that allows users to save items to a wishlist for future purchase.",
+        "assigned": "Xander Ren",
+        "progress": "Not Started",
+        "Label": 0,
+        "Duplicate of": ""
+    },
+    {
+        "Id": "2424x55yz-66aa-77bb-88cc-99dd00ee1231",
+        "title": "Enhance Customer Support",
+        "description": "Improve the customer support system to provide faster and more effective assistance.",
+        "assigned": "Yvonne Sun",
+        "progress": "In Progress",
+        "Label": 0,
+        "Duplicate of": ""
+    },
+    {
+        "Id": "2525y66za-77bb-88cc-99dd-00ee11ff2342",
+        "title": "Improve Product Search",
+        "description": "Enhance the product search functionality to provide more accurate and relevant results.",
+        "assigned": "Zachary Tan",
+        "progress": "In Review",
+        "Label": 0,
+        "Duplicate of": ""
+    },
+    {
+        "Id": "2626z77ab-88cc-99dd-00ee-11ff22gg3453",
+        "title": "Optimize Database Performance",
+        "description": "Implement database optimizations to improve system performance.",
+        "assigned": "Alice Lee",
+        "progress": "Planning",
+        "Label": 0,
+        "Duplicate of": ""
+    },
+    {
+        "Id": "2727a88bc-99dd-00ee-11ff-22gg33hh4564",
+        "title": "Bug Fixing",
+        "description": "Identify and fix bugs reported by users to ensure smooth operation.",
+        "assigned": "Bob Smith",
+        "progress": "In Progress",
+        "Label": 0,
+        "Duplicate of": ""
+    },
+    {
+        "Id": "2828b99cd-00ee-11ff-22gg-33hh44ii5675",
+        "title": "UI/UX Redesign",
+        "description": "Redesign the user interface and improve user experience.",
+        "assigned": "Catherine Chen",
+        "progress": "Not Started",
+        "Label": 0,
+        "Duplicate of": ""
+    },
+    {
+        "Id": "2929c00de-11ff-22gg-33hh-44ii55jj6786",
+        "title": "Implement Payment Gateway",
+        "description": "Integrate a payment gateway to enable online transactions.",
+        "assigned": "David Wang",
+        "progress": "In Progress",
+        "Label": 0,
+        "Duplicate of": ""
+    },
+    {
+        "Id": "3030d11ef-22gg-33hh-44ii-55jj66kk7897",
+        "title": "Improve Data Security",
+        "description": "Enhance data security measures to protect user information.",
+        "assigned": "Emily Liu",
+        "progress": "Planning",
+        "Label": 0,
+        "Duplicate of": ""
+    },
+    {
+        "Id": "3131e22fg-33hh-44ii-55jj-66kk77ll8908",
+        "title": "Localization Support",
+        "description": "Add support for multiple languages to cater to a global audience.",
+        "assigned": "Frank Zhang",
+        "progress": "Not Started",
+        "Label": 0,
+        "Duplicate of": ""
+    },
+    {
+        "Id": "00a12bcd-34ef-56gh-78ij-90klmnop1234",
+        "title": "Develop Login System",
+        "description": "Create a secure login system with email verification and password reset capabilities.",
+        "assigned": "Alice Johnson",
+        "progress": "In Progress",
+        "Label": 1,
+        "Duplicate of": ""
+    },
+    {
+        "Id": "111a22bc-33dd-44ee-55ff-66gg77hh8811",
+        "title": "Implement Email Service",
+        "description": "Set up an automated email service for marketing campaigns.",
+        "assigned": "Bob Smith",
+        "progress": "Not Started",
+        "Label": 1,
+        "Duplicate of": ""
+    },
+    {
+        "Id": "222b33cd-44ee-55ff-66gg-77hh88ii9912",
+        "title": "Optimize Database Performance",
+        "description": "Enhance the speed and efficiency of database queries.",
+        "assigned": "Charlie Lee",
+        "progress": "In Review",
+        "Label": 1,
+        "Duplicate of": ""
+    },
+    {
+        "Id": "333c44de-55ff-66gg-77hh-88ii99jj0103",
+        "title": "Update User Interface",
+        "description": "Revamp the user interface for a more modern look and enhanced usability.",
+        "assigned": "Diane Roe",
+        "progress": "Completed",
+        "Label": 1,
+        "Duplicate of": ""
+    },
+    {
+        "Id": "444d55ef-66gg-77hh-88ii-99jj00kk1217",
+        "title": "Fix Shopping Cart Bug",
+        "description": "Resolve the issue causing items to disappear from the shopping cart.",
+        "assigned": "Evan Tau",
+        "progress": "In Progress",
+        "Label": 1,
+        "Duplicate of": ""
+    },
+    {
+        "Id": "555e66fg-77hh-88ii-99jj-00kk11ll2320",
+        "title": "Create Mobile App",
+        "description": "Design and develop a mobile application for our online platform.",
+        "assigned": "Fiona Yu",
+        "progress": "Not Started",
+        "Label": 1,
+        "Duplicate of": ""
+    },
+    {
+        "Id": "666f77gh-88ii-99jj-00kk-11ll22mm3431",
+        "title": "Improve SEO Ranking",
+        "description": "Execute a plan to boost our website's search engine ranking.",
+        "assigned": "George Ki",
+        "progress": "In Progress",
+        "Label": 1,
+        "Duplicate of": ""
+    },
+    {
+        "Id": "777g88hi-99jj-00kk-11ll-22mm33nn4542",
+        "title": "Refine Checkout Process",
+        "description": "Simplify the checkout process to reduce cart abandonment rates.",
+        "assigned": "Hannah Li",
+        "progress": "In Review",
+        "Label": 1,
+        "Duplicate of": ""
+    },
+    {
+        "Id": "888h99ij-00kk-11ll-22mm-33nn44oo5653",
+        "title": "Upgrade Security Protocols",
+        "description": "Implement the latest security measures to protect user data effectively.",
+        "assigned": "Isaac Ming",
+        "progress": "Planned",
+        "Label": 1,
+        "Duplicate of": ""
+    },
+    {
+        "Id": "999i00jk-11ll-22mm-33nn-44oo55pp6764",
+        "title": "Optimize Site for Mobile",
+        "description": "Ensure the website is fully optimized for mobile usage, improving speed and accessibility.",
+        "assigned": "Julia Ning",
+        "progress": "In Progress",
+        "Label": 1,
+        "Duplicate of": ""
+    },
+    {
+        "Id": "1010j11kl-22mm-33nn-44oo-55pp66qq7875",
+        "title": "Develop API Endpoints",
+        "description": "Create and document API endpoints for the new data integration feature.",
+        "assigned": "Kyle Ong",
+        "progress": "Not Started",
+        "Label": 1,
+        "Duplicate of": ""
+    },
+    {
+        "Id": "1111k22lm-33nn-44oo-55pp-66qq77rr8986",
+        "title": "Improve Email Deliverability",
+        "description": "Troubleshoot and enhance the email system to ensure higher deliverability rates.",
+        "assigned": "Lily Poh",
+        "progress": "In Progress",
+        "Label": 1,
+        "Duplicate of": ""
+    },
+    {
+        "Id": "1212l33mn-44oo-55pp-66qq-77rr88ss9097",
+        "title": "Enhance Data Analytics",
+        "description": "Upgrade the data analytics system to provide more comprehensive insights.",
+        "assigned": "Mike Quan",
+        "progress": "In Review",
+        "Label": 1,
+        "Duplicate of": ""
+    },
+    {
+        "Id": "1313m44no-55pp-66qq-77rr-88ss99tt0120",
+        "title": "Update Payment Gateway",
+        "description": "Upgrade the payment gateway to support additional payment methods and improve security.",
+        "assigned": "Nancy Ruan",
+        "progress": "Completed",
+        "Label": 1,
+        "Duplicate of": ""
+    },
+    {
+        "Id": "1414n55op-66qq-77rr-88ss-99tt00uu1231",
+        "title": "Develop New Feature",
+        "description": "Create a new feature that allows users to save items to a wishlist for future purchase.",
+        "assigned": "Oscar Sun",
+        "progress": "Not Started",
+        "Label": 1,
+        "Duplicate of": ""
+    },
+    {
+        "Id": "1515o66pq-77rr-88ss-99tt-00uu11vv2342",
+        "title": "Enhance Customer Support",
+        "description": "Improve the customer support system to provide faster and more effective assistance.",
+        "assigned": "Patty Tan",
+        "progress": "In Progress",
+        "Label": 1,
+        "Duplicate of": ""
+    },
+    {
+        "Id": "1616p77qr-88ss-99tt-00uu-11vv22ww3453",
+        "title": "Improve Product Search",
+        "description": "Enhance the product search functionality to provide more accurate and relevant results.",
+        "assigned": "Quincy Wang",
+        "progress": "In Review",
+        "Label": 1,
+        "Duplicate of": ""
+    },
+    {
+        "Id": "1717q88rs-99tt-00uu-11vv-22ww33xx4564",
+        "title": "Develop New Feature",
+        "description": "Create a new feature that allows users to save items to a wishlist for future purchase.",
+        "assigned": "Rita Xie",
+        "progress": "Not Started",
+        "Label": 1,
+        "Duplicate of": ""
+    },
+    {
+        "Id": "1818r99st-00uu-11vv-22ww-33xx44yy5675",
+        "title": "Enhance Customer Support",
+        "description": "Improve the customer support system to provide faster and more effective assistance.",
+        "assigned": "Sam Yen",
+        "progress": "In Progress",
+        "Label": 1,
+        "Duplicate of": ""
+    },
+    {
+        "Id": "1919s00tu-11vv-22ww-33xx-44yy55zz6786",
+        "title": "Improve Product Search",
+        "description": "Enhance the product search functionality to provide more accurate and relevant results.",
+        "assigned": "Tina Zhang",
+        "progress": "In Review",
+        "Label": 1,
+        "Duplicate of": ""
+    }
+]
