@@ -118,8 +118,8 @@
     },
     {
         "Id": "4545s66tu-77vv-88ww-99xx-00yy11zz2342",
-        "title": "Optimize Database Performance",
-        "description": "Improve database performance to enhance overall system efficiency.",
+        "title": "Improve Database Performance",
+        "description": "Improve database security by adding more rail guards.",
         "assigned": "Tiffany Davis",
         "progress": "In Review",
         "Label": 0,
@@ -335,7 +335,7 @@
     {
         "Id": "1717q88rs-99tt-00uu-11vv-22ww33xx4586",
         "title": "Develop New Feature",
-        "description": "Build a new feature enabling users to save items to a wishlist for later purchase.",
+        "description": "Implement AR solution, letting customers see the clothing on themselves before buying it.",
         "assigned": "Rita Xie",
         "progress": "Not Started",
         "Label": 1,
@@ -344,7 +344,7 @@
     {
         "Id": "1818r99st-00uu-11vv-22ww-33xx44yy5697",
         "title": "Enhance Customer Support",
-        "description": "Upgrade the customer support system to offer quicker and more efficient help.",
+        "description": "A chatbot needs to be developed to enhance customer support",
         "assigned": "Sam Yen",
         "progress": "In Progress",
         "Label": 1,
@@ -353,7 +353,7 @@
     {
         "Id": "1919s00tu-11vv-22ww-33xx-44yy55zz6708",
         "title": "Improve Product Search",
-        "description": "Optimize the product search feature to deliver better and more precise search outcomes.",
+        "description": "Implement a sparse search using vectorDB to enhance search functionality.",
         "assigned": "Tina Zhang",
         "progress": "In Review",
         "Label": 1,
