@@ -308,7 +308,7 @@
   {
     "Id": "1717q88rs-99tt-00uu-11vv-22ww33xx4564",
     "title": "Develop New Feature",
-    "description": "Create a new feature that allows users to save items to a wishlist for future purchase.",
+    "description": "Create a new feature that allows users to put clothes that they would like to visualise using AR.",
     "assigned": "Rita Xie",
     "progress": "Not Started",
     "Label": 1,
@@ -317,7 +317,7 @@
   {
     "Id": "1717q88rs-99tt-00uu-11vv-22ww33xx4586",
     "title": "Develop New Feature",
-    "description": "Build a new feature enabling users to save items to a wishlist for later purchase.",
+    "description": "Implement AR solution, letting customers see the clothing on themselves before buying it.",
     "assigned": "Rita Xie",
     "progress": "Not Started",
     "Label": 1,
@@ -326,7 +326,7 @@
   {
     "Id": "1818r99st-00uu-11vv-22ww-33xx44yy5675",
     "title": "Enhance Customer Support",
-    "description": "Improve the customer support system to provide faster and more effective assistance.",
+    "description": "Enhance customer support by integrating a chatbot system into our platform.",
     "assigned": "Sam Yen",
     "progress": "In Progress",
     "Label": 1,
@@ -335,7 +335,7 @@
   {
     "Id": "1818r99st-00uu-11vv-22ww-33xx44yy5697",
     "title": "Enhance Customer Support",
-    "description": "Upgrade the customer support system to offer quicker and more efficient help.",
+    "description": "A chatbot needs to be developed to enhance customer support",
     "assigned": "Sam Yen",
     "progress": "In Progress",
     "Label": 1,
@@ -344,7 +344,7 @@
   {
     "Id": "1919s00tu-11vv-22ww-33xx-44yy55zz6786",
     "title": "Improve Product Search",
-    "description": "Enhance the product search functionality to provide more accurate and relevant results.",
+    "description": "Incorporate a sparse search using vectorDB to improve search.",
     "assigned": "Tina Zhang",
     "progress": "In Review",
     "Label": 1,
@@ -353,7 +353,7 @@
   {
     "Id": "1919s00tu-11vv-22ww-33xx-44yy55zz6708",
     "title": "Improve Product Search",
-    "description": "Optimize the product search feature to deliver better and more precise search outcomes.",
+    "description": "Implement a sparse search using vectorDB to enhance search functionality.",
     "assigned": "Tina Zhang",
     "progress": "In Review",
     "Label": 1,
@@ -434,7 +434,7 @@
   {
     "Id": "2020t11uv-22ww-33xx-44yy-55zz66aa7875",
     "title": "Develop New Feature",
-    "description": "Create a new feature that allows users to save items to a wishlist for future purchase.",
+    "description": "Create a new feature that allows users to buy items now and pay later for them.",
     "assigned": "Ursula Ou",
     "progress": "Not Started",
     "Label": 0,
@@ -443,7 +443,7 @@
   {
     "Id": "2121u22vw-33xx-44yy-55zz-66aa77bb8986",
     "title": "Enhance Customer Support",
-    "description": "Improve the customer support system to provide faster and more effective assistance.",
+    "description": "Add a helpline number for customer support to provide assistance over the phone.",
     "assigned": "Victor Peng",
     "progress": "In Progress",
     "Label": 0,
@@ -452,7 +452,7 @@
   {
     "Id": "2222v33wx-44yy-55zz-66aa-77bb88cc9097",
     "title": "Improve Product Search",
-    "description": "Enhance the product search functionality to provide more accurate and relevant results.",
+    "description": "Add image search to help improve the image search functionality.",
     "assigned": "Wendy Qu",
     "progress": "In Review",
     "Label": 0,
@@ -461,7 +461,7 @@
   {
     "Id": "2323w44xy-55zz-66aa-77bb-88cc99dd0120",
     "title": "Develop New Feature",
-    "description": "Create a new feature that allows users to save items to a wishlist for future purchase.",
+    "description": "A new feature needs to be developed, that will track user interaction with the application.",
     "assigned": "Xander Ren",
     "progress": "Not Started",
     "Label": 0,
@@ -470,7 +470,7 @@
   {
     "Id": "2424x55yz-66aa-77bb-88cc-99dd00ee1231",
     "title": "Enhance Customer Support",
-    "description": "Improve the customer support system to provide faster and more effective assistance.",
+    "description": "A new strategy needs to be devised to enhance customer support.",
     "assigned": "Yvonne Sun",
     "progress": "In Progress",
     "Label": 0,
@@ -479,7 +479,7 @@
   {
     "Id": "2525y66za-77bb-88cc-99dd-00ee11ff2342",
     "title": "Improve Product Search",
-    "description": "Enhance the product search functionality to provide more accurate and relevant results.",
+    "description": "Add multilanguage functionality to improve product search.",
     "assigned": "Zachary Tan",
     "progress": "In Review",
     "Label": 0,
@@ -488,7 +488,7 @@
   {
     "Id": "2626z77ab-88cc-99dd-00ee-11ff22gg3453",
     "title": "Optimize Database Performance",
-    "description": "Implement database optimizations to improve system performance.",
+    "description": "Implement database optimizations like horizontal scaling to improve system performance.",
     "assigned": "Alice Lee",
     "progress": "Planning",
     "Label": 0,
@@ -533,7 +533,7 @@
   {
     "Id": "3131e22fg-33hh-44ii-55jj-66kk77ll8908",
     "title": "Localization Support",
-    "description": "Add support for multiple languages to cater to a global audience.",
+    "description": "Add image of local currency to support local currency.",
     "assigned": "Frank Zhang",
     "progress": "Not Started",
     "Label": 0,
@@ -658,8 +658,8 @@
   },
   {
     "Id": "4545s66tu-77vv-88ww-99xx-00yy11zz2342",
-    "title": "Optimize Database Performance",
-    "description": "Improve database performance to enhance overall system efficiency.",
+    "title": "Improve Database Performance",
+    "description": "Improve database security by adding more rail guards.",
     "assigned": "Tiffany Davis",
     "progress": "In Review",
     "Label": 0,
