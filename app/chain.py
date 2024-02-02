@@ -19,7 +19,7 @@ def fetch_data():
     fetches the data from the text file and returns a Langchain Document Object
     """
     try:
-        file_path = "data\dummy.json"
+        file_path = "data\_train.json"
         with open(file_path, 'r') as file:
             data = json.load(file)
         docs = []
