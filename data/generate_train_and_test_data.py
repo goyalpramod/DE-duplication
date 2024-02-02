@@ -28,8 +28,8 @@ def distribute_tasks(data):
     # Adding duplicates to test data
     test_data.extend(duplicate_tasks)
     
-    save_json_data('data/train.json', train_data)
-    save_json_data('data/test.json', test_data)
+    save_json_data('data/_train.json', train_data)
+    save_json_data('data/_test.json', test_data)
 
 # Your JSON file path
 json_file_path = 'data\data_2.json'
