@@ -97,9 +97,11 @@ class MakeChain():
             template = """You are responsible for determining whether a new task is a duplicate of other tasks or not, or if similar tasks exists. 
             you will be provided with the information on the current tasks and relevant info inside <tasks> </tasks> tags, if the tags are empty that means the new task does not have any similar tasks present in the current tasks,
             but if some tasks are present inside the tags, then you have to determine whether the new task is a duplicate of the tasks present inside the tags or not.
-            you will be given the new task inside <new_task> </new_task> tags. Only Reply with the id of tasks which you have determined are a copy or duplication of the new task. If no such tasks exist, reply with 0.
+            you will be given the new task inside <new_task> </new_task> tags. Only Reply in the following format "Duplicates_found : [return the whole information about the possible duplicates from description, assignee, id etc]". If no such tasks exist, reply with 0.
             <tasks> {context}</tasks>
-            <new_task>{question}</<new_task>>"""
+            <new_task>{question}</<new_task>>
+            It is important you you do not miss any tasks that may be a duplicate, so please be thorough in your search.
+            """
             prompt = ChatPromptTemplate.from_template(template)
             return prompt
         except Exception as e:
