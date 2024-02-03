@@ -23,6 +23,7 @@ python-dotenv = "^1.0.1"
 pinecone-text = "^0.7.2"
 numpy = "^1.26.3"
 pandas = "^2.2.0"
+together = "0.2.3"
 
 
 [tool.poetry.group.dev.dependencies]

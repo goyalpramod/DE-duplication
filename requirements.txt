@@ -1,0 +1,13 @@
+openai
+langchain==0.1.4
+langchain-openai
+langchain-together
+langserve[server]
+fastapi
+uvicorn
+qdrant-client
+tiktoken
+pydantic
+pinecone-client
+openai
+python-dotenv

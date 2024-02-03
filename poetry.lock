@@ -3354,6 +3354,17 @@ starlette = "*"
 uvicorn = "*"
 
 [[package]]
+name = "sseclient-py"
+version = "1.7.2"
+description = "SSE client for Python"
+optional = false
+python-versions = "*"
+files = [
+    {file = "sseclient-py-1.7.2.tar.gz", hash = "sha256:ba3197d314766eccb72a1dda80b5fa14a0fbba07d796a287654c07edde88fe0f"},
+    {file = "sseclient_py-1.7.2-py2.py3-none-any.whl", hash = "sha256:a758653b13b78df42cdb696740635a26cb72ad433b75efb68dbbb163d099b6a9"},
+]
+
+[[package]]
 name = "stack-data"
 version = "0.6.3"
 description = "Extract data from python stack frames and tracebacks for informative displays"
@@ -3494,6 +3505,26 @@ webencodings = ">=0.4"
 [package.extras]
 doc = ["sphinx", "sphinx_rtd_theme"]
 test = ["flake8", "isort", "pytest"]
+
+[[package]]
+name = "together"
+version = "0.2.3"
+description = "Python client for Together's Cloud Platform!"
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "together-0.2.3-py3-none-any.whl", hash = "sha256:588e3ce791a0d480c1919209d6819c7354ebb16aaa2c59fe537560ec03f94be9"},
+    {file = "together-0.2.3.tar.gz", hash = "sha256:a2f3b1af41038334744cd2215347e7a5b8088e9528b262173d382d7473b2dd23"},
+]
+
+[package.dependencies]
+requests = "*"
+sseclient-py = "1.7.2"
+tqdm = "*"
+typer = "*"
+
+[package.extras]
+quality = ["black (>=23.1,<24.0)", "mypy (>=1.3.0)", "ruff (>=0.0.241,<=0.0.259)", "types-requests (>=2.31.0.1)", "types-tqdm (>=4.65.0.0)"]
 
 [[package]]
 name = "tomli"
@@ -3902,4 +3933,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.9,<3.13"
-content-hash = "d765c5bde686e892a3fbc5ded23abbea9713b9c2f241c71a3509f0c13dcb187a"
+content-hash = "63f08bdcd98baa880fa855b9b4beb5d1ec9bc95704c864193f441bbf921d1eb0"
