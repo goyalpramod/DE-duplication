@@ -1,4 +1,4 @@
-# work_trial
+# DE-duplication
 
 ## Installation
 
